@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Odin Sign-up-Form Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="./logo.png" alt="odinLogo">
+                <p>ODIN</p>
+            </div>
+            <div class="credit">
+                Photo by <a style="color: rgb(187, 187, 187);"
+                    href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+                    West</a> on <a style="color: rgb(187, 187, 187);"
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="msg">
+                <p>
+                    This is not a real service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                    <br>
+                    <br>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+
+            <div class="form-container">
+
+                <h2>Let's do this!</h2>
+
+                <form action="/">
+                    <div class="firstName">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">LAST NAME</label>
+                        <input class="lName" type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="mail">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="phoneNumber">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+                    <div class="userPass">
+                        <label for="userPassword">PASSWORD</label>
+                        <input type="password" name="userPassword" id="userPassword" required>
+                    </div>
+                    <div class="passConfirm">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="bottom">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

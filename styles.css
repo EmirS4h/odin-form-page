@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  background: #f9fafb;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.left {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left .logo {
+  margin-top: 20%;
+  font-family: "Skranji", cursive;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+.left .logo img {
+  width: 20%;
+  height: auto;
+}
+.left .credit {
+  position: absolute;
+  bottom: 1px;
+  left: 30%;
+  text-align: center;
+  color: rgb(126, 126, 126);
+}
+.right {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: #f9fafb;
+  line-height: 1.2em;
+}
+.msg {
+  padding: 4%;
+  color: #000000;
+  width: 77%;
+  margin: auto auto auto 0px;
+  font-size: 32px;
+  line-height: 1.1em;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 0px 0px 5%;
+  background: #ffffff;
+  box-shadow: 0px 10px 10px 0px rgba(184, 184, 184, 0.562);
+}
+.form-container h2 {
+  font-size: 1.8rem;
+}
+form {
+  display: grid;
+  height: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+.firstName {
+  grid-column: 1 / 2;
+}
+.lastName {
+  grid-column: 2 / 3;
+}
+.lName:focus {
+  border: 2px solid blue;
+  box-shadow: 0px 0px 2px 0px black;
+}
+.mail {
+  grid-column: 1 / 2;
+}
+.phoneNumber {
+  grid-column: 2 / 3;
+}
+.userPass {
+  grid-column: 1 / 2;
+}
+.passConfirm {
+  grid-column: 2 / 3;
+}
+label {
+  font-size: 0.9em;
+  letter-spacing: 0.1rem;
+}
+input {
+  width: 80%;
+  height: 2rem;
+  outline: none;
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 4px;
+}
+.bottom {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px 0px 50px;
+}
+button {
+  font-size: 22px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px 2px rgb(197, 197, 197);
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  color: rgb(230, 230, 230);
+  background-color: rgb(46, 148, 46);
+  margin-bottom: 20px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(42, 134, 42);
+  color: rgb(247, 247, 247);
+}
+.bottom p {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
